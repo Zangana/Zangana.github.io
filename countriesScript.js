@@ -57,8 +57,11 @@ function searchFun(){
     })
    // alert(document.getElementById(search));
    if(searchValue != "") {
-        document.getElementById(searchValue).scrollIntoView({
+        var idOfSearch = document.getElementById(searchValue);
+        idOfSearch.scrollIntoView({
             behavior: 'smooth'
         });
+        idOfSearch.style.color = "white"
+        idOfSearch.style.background = "blue"
     }
 }
