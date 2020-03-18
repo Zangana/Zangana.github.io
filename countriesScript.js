@@ -47,7 +47,7 @@ request.onload = function(){
 }
 request.send()
 function searchFun(){
-    var searchValue = document.getElementById("searchBox").value.toUpperCase();
+    var searchValue = document.getElementById("searchBox").value.trim().toUpperCase();
     var search = document.getElementById("searchBox");
     search.addEventListener("keyup",function(event){
         if (event.keyCode === 13){
@@ -56,8 +56,9 @@ function searchFun(){
         }
     })
    // alert(document.getElementById(search));
-   document.getElementById(searchValue).scrollIntoView({
-       behavior: 'smooth'
-
-   });
+   if(searchValue != "") {
+        document.getElementById(searchValue).scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
 }
