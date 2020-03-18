@@ -23,7 +23,7 @@ request.onload = function(){
         }
         content += 
             '<div class="col">'+
-                '<div class="card text-white bg-secondary" style="max-width: 22rem;">'+
+                '<div class="card text-white bg-secondary mx-2 my-2" style="max-width: 22rem;">'+
                     '<div class="card-header font-weight-bold text-center" id='+result.country.toUpperCase()+'>'+result.country.toUpperCase()+'</div>'+
                         '<div class="card-body">'
                             +'<h4 class="card-title border px-2 text-right">ژ.تووشبوو: '+result.cases+'</h4>'
