@@ -33,7 +33,7 @@ request.onload = function(){
                         +'</div>'
                 +'</div>'
             +'</div>'
-        if(i!=0 && i%5 ==0){
+        if(i!=0 && i%4 ==0){
             content += '</div><div class="row">'
         }
     });
