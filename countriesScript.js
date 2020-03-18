@@ -18,12 +18,12 @@ request.onload = function(){
         if(i == 0){
             content += '<div class="row">'
         }
-        if(i!=0 && i%5 ==0){
+        if(i!=0 && i%4 ==0){
             content += '</div><div class="row">'
         }
         content += 
             '<div class="col">'+
-                '<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">'+
+                '<div class="card text-white bg-secondary mb-3" style="max-width: 22rem;">'+
                     '<div class="card-header font-weight-bold text-center" id='+result.country.toUpperCase()+'>'+result.country.toUpperCase()+'</div>'+
                         '<div class="card-body">'
                             +'<h4 class="card-title border px-2 text-right">ژ.تووشبوو: '+result.cases+'</h4>'
