@@ -1,6 +1,7 @@
 var request = new XMLHttpRequest()
 request.open('GET', 'https://coronavirus-19-api.herokuapp.com/all')
 var allCases = null
+
 request.onload = function(){
     var data = JSON.parse(this.response)
     allCases = data;
